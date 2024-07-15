@@ -1,8 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;700&display=swap');
 
 body {
   margin: 0;
+  padding: 0;
   font-family: 'Raleway', sans-serif;
+  background-color: #f0f0f0;
 }
 
 .site-header {
@@ -45,7 +47,7 @@ body {
 
 .left-nav {
   margin-right: auto;
-  margin-left: 300px
+  margin-left: 300px;
 }
 
 .right-nav {
@@ -95,4 +97,80 @@ body {
   .right-nav {
     margin-left: 0;
   }
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.carousel-container {
+  display: flex;
+  transition: transform 0.5s ease;
+  height: 100%;
+}
+
+.carousel-item {
+  position: relative;
+  min-width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  text-align: left;
+  /* Centraliza à esquerda */
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.carousel-caption p {
+  font-size: 56px;
+  margin-bottom: 15px;
+  margin-left: 161px;
+  margin-right: 617px;
+  color: #fff;
+  font-weight: 300;
+  /* Fonte mais fina */
+}
+
+.btn {
+  display: inline-block;
+  margin-left: 161px;
+  padding: 15px 40px;
+  border: none;
+  background: linear-gradient(135deg, #8A76DF, #CB47CC);
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 10px;
+  /* Adiciona espaço acima do botão */
+}
+
+.btn:hover {
+  background: linear-gradient(135deg, #6b589c, #a433a1);
 }
